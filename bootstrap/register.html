@@ -5,7 +5,7 @@
 </head>
 <style type="text/css">
     body{margin:0;padding: 0;}
-    .login{position:relative;margin:100px auto;padding:50px 20px;width: 350px;height: 200px;}
+    .login{position:relative;margin:100px auto;width: 350px;height: 200px;}
     .login legend{font-weight: bold;color: green;text-align: center;}
     .login label{display:inline-block;width:130px;text-align: right;}
     .btn{height: 30px;width:100px;padding: 5px;border:0;background-color: #00dddd;font-weight: bold;cursor: pointer;float: right;}
@@ -45,7 +45,7 @@
         }
     }
     function checkName(name){  //验证name
-        if(name != ""){ //不为空则正确，当然也可以ajax异步获取服务器判断用户名不重复则正确
+        if(name != ""){ //不为空则正确，
             removeClass(ele.name,"borderRed"); //移除class
             document.images[0].setAttribute("src","./img/gou.png"); //对应图标
             document.images[0].style.display = "inline"; //显示
