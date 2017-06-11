@@ -1,0 +1,117 @@
+#head{
+    height: 240px;
+    width: 100%;
+    background-image: url("../img/head.jpg");
+}
+#search_bar{
+    position: relative; /*脱离文档流*/
+    top:50%; /*偏移*/
+    background-color: rgba(186, 186, 186, 0.5);
+}
+#login{
+    padding-left: 70%;
+}
+#img_a{
+    height:300px;
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url("../img/a.jpg");
+}
+#img_b{
+    height:300px;
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url("../img/b.jpg");
+}
+#img_c{
+    height:300px;
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url("../img/c.jpg");
+}
+#img_d{
+    height:300px;
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url("../img/d.jpg");
+}
+#img_e{
+    height:300px;
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url("../img/e.jpg");
+}
+#img_f{
+    height:300px;
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url("../img/f.jpg");
+}
+#img_g{
+    height:300px;
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url("../img/g.jpg");
+}
+#img_h{
+    height:300px;
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url("../img/h.jpg");
+}
+#img_i{
+    height:300px;
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url("../img/i.jpg");
+}
+#img_j{
+    height:300px;
+    width: 46%;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-image: url("../img/j.jpg");
+}
+.weui-actionsheet__title-text{
+    color: white;
+    margin-top: 270px;
+    padding-left: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.weui-btn_primary{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: rgba(42, 163, 255, 0.5);
+}
