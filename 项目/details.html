@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>详情</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="node_modules/weui/dist/example/example.css"/>
+    <link rel="stylesheet" href="node_modules/weui/dist/style/weui.css"/>
+    <link rel="stylesheet" href="css/details.css"/>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
+    <script src="https://cdn.bootcss.com/jquery-weui/0.8.2/js/jquery-weui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/zepto.min.js"></script>
+    <script src="./js/myjs.js"></script>
 </head>
 <body>
 
+<div id="detail">
+    <div id="img">
+        <div id="operation">
+            <img src="img/ic_action_favorite.png" id="favorite"/>
+            <img src="img/ic_action_share.png" id="share"/>
+        </div>
+    </div>
+    <div id="person">
+        <div id="user">
+            <img src="img/user.jpg"/>
+        </div>
+        <div id="text">
+            <p data-name="name" id="name"> Belle </p>
+            <p id="content">今日事，今日毕</p>
+        </div>
+        <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary" id="attention">关注</a>
+    </div>
+</div>
 </body>
 </html>
