@@ -2,13 +2,13 @@
  * Created by lenovo on 2017/6/11.
  */
 $(function(){
+   
     var $searchBar = $('#search_bar'),
     // $searchResult = $('#searchResult'),
     $searchText = $('#search_text'),
     $searchInput = $('#search_input'),
     $searchClear = $('#search_clear'),
     $searchCancel = $('#search_cancel');
-
     function hideSearchResult(){
 //        $searchResult.hide();
         $searchInput.val('');
@@ -42,5 +42,17 @@ $(function(){
     $searchCancel.on('click', function(){
       //  cancelSearch();
         $searchInput.blur();
+    });
+
+ $('#fab').click( function(){
+        $('#add').show();
+    });
+
+    $('#exit').click( function(){
+        $('#add').hide();
+    });
+    $('#upload').click(function () {
+        $('#add').hide();
+        location.reload();
     });
 });

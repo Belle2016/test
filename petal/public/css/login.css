@@ -76,3 +76,10 @@ input{
     margin-top: 10px;
     margin-left: 60%;
 }
+#error_box{
+    height:40px;
+    width:350px;
+    margin:0 auto;
+    line-height:40px;
+    color:#fc4343;
+}

@@ -8,8 +8,8 @@
     top:130px; /*偏移*/
     background-color: rgba(186, 186, 186, 0.5);
 }
-#login{
-    padding-left: 70%;
+#l_r{
+    padding-left: 60%;
 }
 #img_a{
     height:300px;
@@ -126,9 +126,9 @@
 #add{
     display: none;
 }
-#add_img{
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 20px;
+.weui-uploader__input-box{
+    margin:auto;
+    margin-top: 10px;
     margin-bottom: 20px;
+    float: inherit;
 }

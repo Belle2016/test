@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <title>花瓣</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-    <link rel="stylesheet" href="../node_modules/weui/dist/example/example.css"/>
-    <link rel="stylesheet" href="../node_modules/weui/dist/style/weui.css"/>
+    <link rel="stylesheet" href="css/weui/dist/example/example.css"/>
+    <link rel="stylesheet" href="css/weui/dist/style/weui.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <script src="./js/jquery-1.9.0.min.js"></script>
-    <script src="./js/zepto.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
     <script src="./js/myjs.js"></script>
+    <script src="./js/login.js"></script>
 </head>
 <body>
 <div id="head">
-    <a href="login.html" class="weui-btn" id="login" >登录/注册</a>
+    <a href="login.html" class="weui-btn" id="l_r" >登录/注册</a>
     <div class="weui-search-bar" id="search_bar">
         <form class="weui-search-bar__form">
             <div class="weui-search-bar__box">
@@ -70,19 +71,30 @@
         <p class="weui-actionsheet__title-text">made by U</p>
     </div>
 
-    <div id="fab"></div>
+    <div id="fab" ></div>
 
     <div id="add">
         <div class="weui-mask"></div>
         <div class="weui-dialog">
             <div class="weui-dialog__hd"><strong class="weui-dialog__title">添加花瓣</strong></div>
-            <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary" id="add_img">上传</a>
+            <!--<a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary" id="add_img">上传</a>-->
+            <div class="weui-uploader__input-box">
+                <input id="uploaderInput" class="weui-uploader__input" type="file" accept="image/*" multiple />
+            </div>
             <div class="weui-dialog__ft">
-                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_default">确认上传</a>
-                <a href="javascript:;" class="weui-dialog__btn weui-dialog__btn_primary">取消上传</a>
+                <a href="javascript:;" id="exit" class="weui-dialog__btn weui-dialog__btn_default">取消上传</a>
+                <a href="javascript:;" id="upload" class="weui-dialog__btn weui-dialog__btn_primary">确认上传</a>
             </div>
         </div>
     </div>
 </div>
 </body>
+<script>
+    var cookie_name = $.cookie("name");
+if (cookie_name!=undefined){
+    document.getElementById("l_r").innerHTML='用户:'+ cookie_name+' 注销';}
+else{
+    document.getElementById("l_r").innerHTML='登录/注册';
+}
+</script>
 </html>

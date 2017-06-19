@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <title>注册</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
-    <link rel="stylesheet" href="../node_modules/weui/dist/example/example.css"/>
-    <link rel="stylesheet" href="../node_modules/weui/dist/style/weui.css"/>
+    <link rel="stylesheet" href="css/weui/dist/example/example.css"/>
+    <link rel="stylesheet" href="css/weui/dist/style/weui.css"/>
     <link rel="stylesheet" href="css/login.css"/>
     <script src="./js/jquery-1.9.0.min.js"></script>
     <script src="./js/zepto.min.js"></script>
     <script src="./js/myjs.js"></script>
+    <script src="./js/register.js"></script>
 </head>
 <body>
 <div id="login">
     <h1>Register</h1>
-    <form method="post">
-        <input type="text" required="required" placeholder="用户名" name="user"/>
-        <input type="password" required="required" placeholder="输入密码" name="pwd"/>
-        <input type="password" required="required" placeholder="再次输入密码" name="pwd2"/>
-        <button class="but" type="submit" onclick="javascrtpt:window.location.href='login.html'">注册</button>
-    </form>
+    <!--<form method="post">-->
+        <div id="error_box"></div>
+        <input type="text" required="required" placeholder="用户名" name="name" id="r_name"/>
+        <input type="password" required="required" placeholder="输入密码" name="pwd" id="r_pwd"/>
+        <input type="password" required="required" placeholder="再次输入密码" name="pwd2" id="r_pwd2"/>
+        <button class="but" id="btn_register">注册</button>
+    <!--</form>-->
 </div>
 </body>
 </html>
